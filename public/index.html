@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+		<title>智家</title>
+		<script src="https://cdn.bootcss.com/vue/2.6.6/vue.min.js"></script>
+		<script src="https://cdn.bootcss.com/vuex/3.1.0/vuex.min.js"></script>
+		<script src="https://cdn.bootcss.com/vue-router/3.0.2/vue-router.min.js"></script>
+		<!-- <script src="https://cdn.bootcss.com/vue/2.6.6/vue.js"></script>
+		<script src="https://cdn.bootcss.com/vuex/3.1.0/vuex.js"></script>
+		<script src="https://cdn.bootcss.com/vue-router/3.0.2/vue-router.js"></script> -->
+		<script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+		<script src="https://cdn.bootcss.com/element-ui/2.8.2/index.js"></script>
+		<script src="https://cdn.bootcss.com/dayjs/1.8.13/dayjs.min.js"></script>
+		<script src="//at.alicdn.com/t/font_966927_izqug88gwq.js"></script>
+		<link
+			href="https://cdn.bootcss.com/element-ui/2.8.2/theme-chalk/index.css"
+			rel="stylesheet"
+		/>
+		<style>
+			#loading {
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			#loading::before,
+			#loading::after {
+				content: ' ';
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				background-color: #409eff;
+				opacity: 0.6;
+				position: absolute;
+				top: 0;
+				left: 0;
+				animation: bounce 2s infinite ease-in-out;
+			}
+
+			#loading::after {
+				animation-delay: -1s;
+			}
+
+			@keyframes bounce {
+				0%,
+				100% {
+					transform: scale(0);
+				}
+				50% {
+					transform: scale(1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<noscript>
+			<strong>
+				We're sorry but project-admin doesn't work properly without
+				JavaScript enabled. Please enable it to continue.
+			</strong>
+		</noscript>
+		<div id="app"></div>
+		<div id="loading"></div>
+	</body>
+</html>

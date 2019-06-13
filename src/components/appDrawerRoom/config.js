@@ -1,0 +1,16 @@
+export const ICONS = [
+	'icon-keting',
+	'icon-woshi',
+	'icon-cangting-1',
+	'icon-canting-2',
+	'icon-weishengjian',
+	'icon-yushi',
+	'icon-chufang',
+	'icon-yingerfang',
+	'icon-children',
+	'icon-diannaozhuo',
+	'icon-shafa',
+	'icon-shufang',
+	'icon-work',
+	'icon-yangtai',
+];
